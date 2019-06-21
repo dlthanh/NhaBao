@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.emag-video img').click(function() {
+                $(this).parent().find('video')[0].play();
+                $(this).fadeOut(300);
+            })
+        })
+    </script>
 </head>
 <body>
     <div class="emag-wrapper">
@@ -62,7 +70,10 @@
             </div>
 
             <div class="emag-video">
-                    <div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/4wgow/dfkgto" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>
+                <div class="emag-video wow fadeInUp" data-wow-duration="1s">
+                    <video src="https://dlthanh.com/4wgow.mp4" controls></video>
+                    <img src="images/thumb.jpg" alt="">
+                </div>
             </div>
 
             <img src="images/title-2.png" alt="">
@@ -112,9 +123,11 @@
             <img src="images/img-7.jpg" alt="">
 
             <div class="emag-content">
-                <p>Giáo sư Đào Nguyên Cát không nói nhiều, chỉ thi thoảng thôi, nhưng văng vẳng trong nhiều thế hệ phóng viên là “sống phải vị tha và nhân hậu”. Một điều lạ lùng, có lẽ trong làng báo, ông còn là tổng biên tập hiếm hoi chấp nhận và thoả hiệp với những người đối lập.</p>
+                <p>Tấm lòng của ông còn ở chỗ: mở cơ hội việc làm cho tất cả. Trong ông dường như không có khái niệm phân biệt đối xử, từ bằng cấp, giới tính hay tuổi tác. Bất kể ai, chỉ cần biết yêu lao động, nỗ lực vượt giới hạn bản thân là có thể cộng tác ở Thời báo Kinh tế Việt Nam.</p>
 
-                <p>Ông cho rằng cuộc sống là tổng hòa của những giá trị đồng nhất và mâu thuẫn. Ông đã sống và trải nghiệm gần 94 năm cuộc đời, đi qua nhiều cuộc chiến tranh, từng vào sinh ra tử. Đặc biệt là hoạt động chuyên trách trên mặt trận văn hoá tư tưởng, vốn là lĩnh vực nhạy cảm, ranh giới “địch - ta”, “tốt - xấu” khá trừu tượng và không ít lần ông trở thành nạn nhân của đố kỵ. Nhưng, ông đã vượt qua và lan toả tấm lòng bao dung, độ lượng với “đàn con” của mình.</p>
+                <p>Và, thay vì đường lối quản trị chuẩn mực, máy móc thậm chí là hà khắc như ở nhiều tờ báo khác, ông đặt vào đó những nguyên tắc cơ bản: đúng đường lối của Đảng, Nhà nước; hỗ trợ quản lý, hỗ trợ thị trường và quản trị vị tha. Cứ như vậy, tổ hợp Thời báo Kinh tế Việt Nam cứ lớn lên từng ngày song hành với sự đa dạng về về tuổi tác, bằng cấp và cả sự nhường nhịn.</p>
+					
+				<p>Ngày 21/6 năm nay, kỷ niệm 94 năm Ngày báo chí cách mạng Việt Nam. Một sự trùng hợp thật ngẫu nhiên, cũng là ngày ông bước sang tuổi 94. Các thế hệ cán bộ lãnh đạo, phóng viên kính chúc ông thật nhiều sức khoẻ, để tiếp tục ghi nhận và tự hào về những thành quả của Thời báo Kinh tế Việt Nam."</p>
             </div> 
 
             <img src="images/credit.png" alt="" style="margin-bottom: 0;">
